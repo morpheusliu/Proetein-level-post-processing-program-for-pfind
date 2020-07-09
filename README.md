@@ -9,9 +9,12 @@ pFind download after 2020.01.01 is necessory.
 (3) Creat two new subfolders, 'data' and 'data_protein', in chich folder .py programs in;
 (4) Creat a new .txt file and nominate it 'database'; 
 (5) Open the original database file in a .fasta format with a text editor, copy and paste all the contents into the text new created file ‘database’. Double click the program ‘construct_library.py’ to reconstruct the database. 
-(6) Copy the file ‘pQuant.spectra.list’ from the ‘results’ folder in the folder of pfind result you have assigned and paste it into the subfolder ‘data’. Rename the file as ‘IPM[C]_XXX’. (7) Copy the file ‘pFind.protein’ from the folder ‘results’ in the location setup in Step 75 and paste it into the subfolder ‘data_protein’. Rename the file as ‘IPM[C]_XXX_P’.
-(8) Double click the program ‘pfind_post_processing_site_level.py’ and use the following command:
+(6) Copy the file ‘pQuant.spectra.list’ from the ‘results’ folder in the folder of pfind result you have assigned and paste it into the subfolder ‘data’. Rename the file as ‘Dimethyl_XXX’. (7) Copy the file ‘pFind.protein’ from the folder ‘results’ in the location setup in Step 75 and paste it into the subfolder ‘data_protein’. Rename the file as ‘Dimethyl_XXX_P’.
+(8) Double click the program ‘main_protein_level_quantity_v6_20200110.py’ and use the following command:
 - ‘Please enter the calculation style (lh for light/heavy & hl for heavy/light):’ Type ‘hl’ or ‘lh’ to proceed
 - ‘Please enter the cut off value of interference score:’ Type ‘0.5’ to proceed.
-- ‘Please enter the number of modification in each spectrum (a for single modification & b for multi-modification):’. Type ‘a’ to proceed. Press ‘Enter key’ and run the    algorithm. 
-(9) Find the output file with the prefix ‘site_’ in the subfolder ‘results’ and import it into Excel.
+- ‘Please enter the number of modification in each spectrum (a for single modification & b for multi-modification):’. Type ‘a’ to proceed. 
+- 'Please make sure the peptide type (y for ptm mode & n for unique peptide mode:'. Type 'n' to proceed.
+- 'Do you need real uniquepeptide (real uniquepeptide is a peptide with only one ac) (y for yes and n for no):'. Type 'y' to peoceed.
+- Press ‘Enter key’ and run the    algorithm. 
+(9) Find the output file with the prefix ‘protein_’ in the subfolder ‘results’ and import it into Excel.
